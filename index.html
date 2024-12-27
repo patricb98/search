@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div id = "header" >
+            <a href="image_search.html" class="button">Image Search</a>
+            <a href="advanced_search.html" class="button">Advanced Search</a>
+        </div>
+        <div id ="container">
+            <img src="/Users/patricbeaven/CS50/projects/search/images/download.png" class = "logo">
+            <form id="searchbox" action="https://www.google.com/search">
+                <input type="text" name="q" placeholder="Search Google or type a URL">
+                <div>
+                    <input type="submit" value="Google Search">
+                    <button 
+                        type="button" 
+                        class="button" 
+                        onclick="feelingLucky()"
+                        style="margin-left: 10px;"
+                    >
+                        I'm Feeling Lucky
+                    </button>
+                </div>    
+            </form>
+        </div>
+        <script>
+            function feelingLucky() {
+                const query = document.querySelector('input[name="q"]').value.trim();
+                if (query) {
+                    window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}&btnI=1`;
+                } else {
+                    window.location.href = 'https://doodles.google/';
+                }
+            }
+        </script>
     </body>
 </html>
-
-
