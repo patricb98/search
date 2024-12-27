@@ -16,16 +16,16 @@ body {
     top: 20px;
     right: 20px;
     display: flex;
-    gap: 10px; /* Adds space between buttons */
+    gap: 10px; 
 }
 
 .button {
     text-decoration: none;
-    background-color: #4285f4; /* Google-like blue */
+    background-color: #4285f4;
     color: white;
     padding: 10px 15px;
     font-size: 14px;
-    border-radius: 20px; /* Rounded edges */
+    border-radius: 20px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -50,9 +50,9 @@ body {
 }
 
 .logo {
-    margin-bottom: 20px; /* Space between the logo and the search box */
-    width: auto; /* Adjust the width of the logo */
-    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; 
+    width: auto; 
+    height: auto; 
 }
 
 /* Image Search Logo container styling for text positioning */
@@ -63,18 +63,20 @@ body {
 
 .logo-text {
     position: absolute;
-    top: 70%; /* Adjust this value to move vertically */
-    left: 82%; /* Adjust this value to move horizontally */
+    top: 70%; 
+    left: 82%; 
     transform: translateX(-15%) translateY(-50%);
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 20px; 
     font-family: Arial, sans-serif;
-    color: #555; /* Adjust color if needed */
+    color: #555; 
     text-align: center;
 }
 
+/* google search and image search boxes */
+
 #searchbox {
     display: flex;
-    flex-direction: column; /* Horizontal layout for the input and button */
+    flex-direction: column; 
     align-items: center;
 }
 
@@ -82,59 +84,164 @@ input[type="text"] {
     padding: 12px 15px;
     font-size: 16px;
     width: 600px;
-    border: 1px solid #ddd; /* Light border for modern design */
-    border-radius: 25px; /* Fully rounded edges */
+    border: 1px solid #ddd; 
+    border-radius: 25px; 
     margin-bottom: 5px;
-    outline: none; /* Remove default focus outline */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover and focus */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    outline: none; 
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"]:focus {
-    border-color: #4285f4; /* Blue border on focus */
-    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3); /* Stronger shadow on focus */
+    border-color: #4285f4; 
+    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3); 
 }
 
 input[type="submit"] {
     padding: 12px 20px;
     font-size: 16px;
-    background-color: #4285f4; /* Google-like blue color */
-    color: white; /* White text */
-    border: none; /* Remove default border */
-    border-radius: 25px; /* Fully rounded edges */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #4285f4; 
+    color: white; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 input[type="submit"]:hover {
-    background-color: #357ae8; /* Slightly darker blue on hover */
-    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3); /* Stronger shadow on hover */
+    background-color: #357ae8; 
+    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3); 
 }
 
 input[type="submit"]:active {
-    transform: scale(0.95); /* Button press effect */
-    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.2); /* Lighter shadow on press */
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.2); 
 }
 
 button[type="button"] {
     padding: 12px 20px;
     font-size: 16px;
-    background-color: #4285f4; /* Google-like blue color */
-    color: white; /* White text */
-    border: none; /* Remove default border */
-    border-radius: 25px; /* Fully rounded edges */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #4285f4;
+    color: white; 
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 button[type="button"]:hover {
-    background-color: #357ae8; /* Slightly darker blue on hover */
-    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3); /* Stronger shadow on hover */
+    background-color: #357ae8; 
+    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3); 
 }
 
 button[type="button"]:active {
-    transform: scale(0.95); /* Button press effect */
-    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.2); /* Lighter shadow on press */
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.2); 
+}
+
+/* Advanced Search Styling */
+#AS-logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.AS-logo {
+    width: 120px; 
+    height: auto;
+}
+
+#advanced-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px; 
+    width: 100%;
+}
+.AS-h1{
+    font-size: 24px;
+    color: #e97474; 
+    margin: 0;
+    padding-top: 10px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#advanced-search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 15px; 
+    width: 100%;
+    margin-left: 40px;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+    width: 100%; 
+}
+
+.field label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+    white-space: nowrap;
+    width: 220px;
+}
+
+.field input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.field input:focus {
+    border-color: #4285f4;
+    outline: none;
+}
+
+.button-container {
+    text-align: left; 
+    margin-top: 20px;
+}
+
+.blue-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blue-button:hover {
+    background-color: #357ae8;
+    box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3);
+}
+
+.blue-button:active {
+    background-color: #2a65c7;
+    box-shadow: 0 2px 4px rgba(66, 133, 244, 0.2);
 }

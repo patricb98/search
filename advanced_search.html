@@ -6,15 +6,51 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="header">
-            <a href="index.html" class="button">Home</a>
-            <a href="image_search.html" class="button">Image Search</a>
+        <!-- Google Logo -->
+        <div id="AS-logo-container">
+            <img src="images/download.png" alt="Google Logo" class="AS-logo">
         </div>
-        <div id="container">
-            <h1>Advanced Search</h1>
-            <p>This is the Advanced Search page. Add your advanced search options here.</p>
+
+        <!-- Header Buttons -->
+        <div id="header">
+            <a href="index.html" class="button">Google Search</a>
+        </div>
+
+        <!-- Advanced Search Content -->
+        <div id="advanced-container">
+            <h1 class = "AS-h1"> Advanced Search </h1> 
+            <hr class ="divider">
+            <form id="advanced-search-form" action="https://www.google.com/search" method="GET">
+                <h3>Find pages with ...</h3>
+                <!-- Find pages with "all these words" -->
+                <div class="field">
+                    <label for="all-words">all these words:</label>
+                    <input type="text" id="all-words" name="as_q" placeholder="Enter your query">
+                </div>
+                
+                <!-- Find pages with "this exact word or phrase" -->
+                <div class="field">
+                    <label for="exact-phrase">this exact word or phrase:</label>
+                    <input type="text" id="exact-phrase" name="as_epq" placeholder="Enter your query">
+                </div>
+                
+                <!-- Find pages with "any of these words" -->
+                <div class="field">
+                    <label for="any-words">any of these words:</label>
+                    <input type="text" id="any-words" name="as_oq" placeholder="Enter your query">
+                </div>
+                
+                <!-- Find pages with "none of these words" -->
+                <div class="field">
+                    <label for="none-words">none of these words:</label>
+                    <input type="text" id="none-words" name="as_eq" placeholder="Enter your query">
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="button-container">
+                    <input type="submit" value="Advanced Search" class="blue-button">
+                </div>
+            </form>
         </div>
     </body>
 </html>
-
-
